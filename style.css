@@ -1,0 +1,113 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root {
+    --cor01: #032b75;
+    --cor02: #08164C;
+    --cor03: #90682B;
+    --fonte01: 'Times New Roman', Times, serif;
+    --fonte02: 'Passion One',cursive
+}
+
+body {
+    background-image: linear-gradient(to bottom,#05358f, rgb(8, 22, 76));
+}
+header {
+    background-color: rgb(8, 22, 76);
+    padding: 20px;
+    padding-top: 20px;
+}
+nav {
+    padding: 10px 20px;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: right;
+    box-sizing: border-box;
+
+}
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(9, 233, 233, 0.877);
+    text-shadow: rgba(7, 199, 199, 0.582);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+nav > a:hover {
+    background-color: rgba(6, 78, 78, 0.466);
+    border-radius: 10px;
+    
+}
+header > h1{
+    font-family: var(--fonte01);
+    color: #C9A84C;
+    margin: 20px;
+    padding: 10px;
+    font-size: 3.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+header> p#principal {
+    font-family: var(--fonte01);
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    text-indent: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    text-align: justify;
+    padding-inline: 5px;
+    padding-bottom: 20px;
+}
+header> p#importante {
+    background-color: rgb(15, 38, 131);
+    border-radius: 10px;
+    font-family: var(--fonte01);
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1em ;
+    color: #D4AF37;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+section > h1 {
+    margin-top: 30px;
+    margin-left: 25px;
+    color: #D4AF37;
+}
+article {
+    display: inline-flex;
+    margin: 15px;
+    background-color: rgb(8,22,76);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.945);
+
+}
+
+article > div > p#atacado {
+    text-align: center;
+    padding: 2px;
+    color: #C9A84C;
+}
+article > div {
+    padding: 10px;
+    padding-left: 4px;
+    color: #C9A84C;
+    text-align: center;
+    text-shadow: #032b75;
+    font-weight: bolder;
+}
