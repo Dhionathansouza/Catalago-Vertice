@@ -25,14 +25,23 @@ body {
 header {
     background-image: radial-gradient( ellipse at top, rgba(15,60,160,1) 0%, rgba(8,22,76,1) 60%, rgba(2,10,40,1) 100% );
     border-bottom: 2px solid #C9A84C;
-    padding: 20px;
+    padding: 40px 20px 20px;
+    padding-top: 70px;
 }
 main, section , article {
     background-color: transparent;
 }
+#logo {
+    height: 35px;
+    margin-right: auto;
+    vertical-align: middle;
+}
 nav {
-    padding: 10px 20px;
-    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    gap: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,6 +51,7 @@ nav {
     text-align: right;
     box-sizing: border-box;
     border-bottom: 2px solid rgba(11, 199, 199, 0.877);
+
 
 }
 nav > a {
@@ -70,7 +80,7 @@ nav > a:hover::after {
 
 nav > a:hover {
     background-color: rgba(6,78,78,0.466);
-    transform: scale(1.1);
+    transform: scale(1.05);
     border-radius: 10px;
     color: rgba(3, 240, 240, 0.699);
     
@@ -85,7 +95,7 @@ header > h1{
     color: #C9A84C;
     margin: 20px;
     padding: 10px;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: bolder;
     text-align: center;
 }
@@ -157,4 +167,38 @@ article > div {
     text-align: center;
     text-shadow: #032b75;
     font-weight: bolder;
+}
+footer {
+    background-color: #0a0a0a;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px 20px 20px;
+    border-top: 2px solid #C9A84C;
+}
+footer  h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #C9A84C;
+    margin-bottom: 10px;
+}
+footer p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+footer  a {
+    padding-top: 20px;
+    color: rgba(7, 199, 199, 0.856);
+    text-decoration: none;
+    font-weight: bold;
+}
+p#instagram {
+    margin-top: 5px;
+}
+#direitos {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+    font-size: 0.85em;
+    color: rgba(255,255,255,0.5);
 }
