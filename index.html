@@ -23,51 +23,29 @@
 
     <main id="modelos">
         <section>
-            <h1>Calças Pantalona</h1>
+            <h1>Calça Pantalona</h1>
             <article>
-                <div class="card">
-                    <div class="img-box">
-                        <a href="https://wa.me/5562981916694?text=Olá,tenho interesse na Pantalona Azul!" target="_blank"><img src="imagens/1.jpg" alt="Pantalona Azul">
-                            <div class="overlay">
-                                <p>Ver Produto</p>
-                            </div>
-                        </a>
-                    </div>
-                    <p>Varejo 84,90</p>
-                    <p id="atacado">Atacado 79,90</p>
-                    <p>PP ao EXG</p>
-                </div>
-                <div class="card">
-                    <div class="img-box"><a href="https://wa.me/5562981916694?text=Olá,tenho interesse na Pantalona Preta!" target="_blank"><img src="imagens/4.jpg" alt="Pantalona Preta">
-                        <div class="overlay">
-                                <p>Ver Produto</p>
-                        </div>
+                <div class="produto">
+                    <a href="https://wa.me/5562981916694?text=Olá,tenho interesse na Pantalona" target="_blank">
+                        <img id="img1" src="imagens/1.jpg" alt="Pantalona Azul" class="produto-img">
                     </a>
-
+                    <h2>Calça pantalona</h2>
+                    <p class="preco">84,90</p>
+                    <p class="atacado">Atacado: <R1>79,90</R1></p>
+                    <p class="tamanho">PP ao EXG</p>                  
+                    <div class="cores">
+                        <span onclick="trocarImagem('img1','imagens/1.jpg')" style="background: #1E3a8a;">
+                        </span>
+                        <span onclick="trocarImagem('img1','imagens/4.jpg')" style="background: black;">
+                        </span>
+                        <span onclick="trocarImagem('img1','imagens/7.jpg')" style="background: rgb(70, 30, 30);">
+                        </span>  
                     </div>
-
-                    <p>Varejo 84,90</p>
-                    <p id="atacado">Atacado 79,90</p>
-                    <p>PP ao EXG</p>
-                </div>
-                <div class="card">
-                    <div class="img-box"><a href="https://wa.me/5562981916694?text=Olá,tenho interesse na Pantalona Marrom!" target="_blank"><img src="imagens/7.jpg"  alt="Marrom">
-                        <div class="overlay">
-                                <p>Ver Produto</p>
-                        </div>
+                    <a class="btn-whatsapp" 
+                    href="https://wa.me/5562981916694?text=Olá,tenho interesse na Pantalona" target="_blank">
+                    Falar no WhatsApp
                     </a>
                 </div>
-
-                    <p>Varejo 84,90</p>
-                    <p id="atacado">Atacado 79,90</p>
-                    <p>PP ao EXG</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-
-                <aside>
-                </aside>
             </article>
         </section>
         <section>
@@ -117,6 +95,7 @@
                 </aside>
             </article>
         </section>
+
     </main>
 
     <footer id="faleconosco">
@@ -130,5 +109,10 @@
             <p>&copy; 2026 Vértice Alfaiataria. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script>
+    function trocarImagem(id, novaImagem) {
+        document.getElementById(id).src = novaImagem
+    }
+    </script>
 </body>
 </html>
